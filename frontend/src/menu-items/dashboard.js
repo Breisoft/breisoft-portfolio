@@ -1,10 +1,13 @@
 // assets
 import { DashboardOutlined, HomeOutlined } from '@ant-design/icons';
 
+import WebIcon from '@mui/icons-material/Web';
+
 // icons
 const icons = {
   DashboardOutlined,
-  HomeOutlined
+  HomeOutlined,
+  WebIcon
 };
 
 // ==============================|| MENU ITEMS - DASHBOARD ||============================== //
@@ -15,10 +18,10 @@ const dashboard = {
   type: 'group',
   children: [
     {
-      id: 'dashboard',
-      title: 'Dashboard',
+      id: 'projects',
+      title: 'Projects',
       type: 'item',
-      url: '/dashboard',
+      url: '/',
       icon: icons.DashboardOutlined,
       breadcrumbs: false
     },
@@ -27,7 +30,7 @@ const dashboard = {
       title: 'Main Site',
       type: 'item',
       url: 'https://breisoft.com',
-      icon: icons.HomeOutlined,
+      icon: icons.WebIcon,
       breadcrumbs: false
     }
   ]
